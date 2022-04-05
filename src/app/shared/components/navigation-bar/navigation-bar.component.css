@@ -96,3 +96,9 @@
     justify-content: center;
     text-align: center;
 }
+
+@media only screen and (max-width: 500px) {
+    #circle-section {
+        display: none;
+    }
+}
