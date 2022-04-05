@@ -4,13 +4,13 @@
   }
   
 .font-main-app-bar {
-    font-size: 20px;
+    font-size: 22px;
     text-transform: uppercase;
     color: white;
 }
 
 .font-sub-app-bar {
-    font-size: 11px;
+    font-size: 13px;
     text-transform: uppercase;
     color: white;
 }
@@ -24,7 +24,7 @@
 
 @media only screen and (max-width: 500px) {
     .font-main-app-bar {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .font-sub-app-bar {
