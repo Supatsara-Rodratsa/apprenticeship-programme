@@ -1,0 +1,16 @@
+@font-face {
+    font-family: apercuPro;
+    src: url('../../assets/fonts/ApercuPro.ttf');
+  }
+  
+.font-main-app-bar {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.font-sub-app-bar {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: white;
+}
