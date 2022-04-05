@@ -96,6 +96,14 @@ src: url('../../assets/fonts/ApercuLight.otf') format("opentype");
     .h1 {
         font-size: 35px;
     }
+
+    .elm-detail-1 {
+        font-size: 18px;
+    }
+    
+    .elm-detail-2 {
+        font-size: 20px !important;
+    }
 }
 
 @media only screen and (max-width: 1350px) {
