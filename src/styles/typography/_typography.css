@@ -1,7 +1,17 @@
 @font-face {
     font-family: apercuPro;
     src: url('../../assets/fonts/ApercuPro.ttf');
-  }
+}
+
+@font-face {
+font-family: apercuProLight;
+src: url('../../assets/fonts/ApercuLight.otf') format("opentype");
+}
+
+@font-face {
+    font-family: apercuProMedium;
+    src: url('../../assets/fonts/ApercuMedium.otf') format("opentype");
+    }
   
 .font-main-app-bar {
     font-size: 22px;
@@ -22,6 +32,54 @@
     letter-spacing: -0.16px;
 }
 
+.h1 {
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+}
+
+.sub-detail-light {
+    font-size: 18px;
+    font-family: apercuProLight;
+    color: var(--dark-gray);
+    letter-spacing: -0.18px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.sub-detail-light-2 {
+    font-size: 22px;
+    font-family: apercuProLight;
+    color: var(--dark);
+}
+
+.elm-detail-1 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.33px;
+    color: var(--dark);
+}
+
+.sub-header-1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary_color);
+}
+
+.elm-detail-2 {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 24px;
+    color: var(--dark);
+}
+
+.font-light {
+    font-family: apercuProLight !important;
+    font-weight: 300 !important;
+}
+
 @media only screen and (max-width: 500px) {
     .font-main-app-bar {
         font-size: 20px;
@@ -33,5 +91,15 @@
     
     .button-font {
         font-size: 16px;
+    }
+
+    .h1 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .elm-detail-2 {
+        font-size: 24px;
     }
 }

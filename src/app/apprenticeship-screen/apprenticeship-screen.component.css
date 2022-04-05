@@ -1,0 +1,19 @@
+.containter {
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    overflow: auto;
+    width: 80%;
+}
+
+@media only screen and (max-width: 500px) {
+    .containter {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .containter {
+        width: 90%;
+    }
+}
