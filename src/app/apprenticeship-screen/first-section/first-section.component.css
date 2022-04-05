@@ -49,7 +49,7 @@ p {
 .application-close-section {
     display: flex;
     flex-direction: column;
-    padding: 25px 40px;
+    padding: 30px;
 }
 
 .application-detail {
@@ -103,5 +103,12 @@ p {
 @media only screen and (min-width: 992px) {
     #smaller-screen {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #logo {
+        transform: translateX(150px);
+        top: 20px;
     }
 }
