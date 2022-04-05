@@ -1,0 +1,98 @@
+.main-app-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary_color);
+}
+
+.main-app-bar .main-app-bar-row {
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-app-bar .main-app-bar-row .main-detail {
+    display: flex;
+}
+
+.main-detail-row {
+    flex-direction: row;
+}
+
+.main-app-bar .main-app-bar-row .main-detail .margin-layout {
+    margin: 23px 0px 0px 5px;
+}
+
+.main-detail .hamberger-section {
+    padding: 0px 5px;
+}
+
+.hamberger-section:active {
+    background-color:  var(--secondary_color);
+}
+
+.hamberger-section .hamberger-menu {
+    position: relative;
+    top: 4px;
+    width: 26px;
+    padding: 5px 0px;
+    transform: translateZ(0px);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamberger-menu::before {
+    top: 3px;
+    left: 0px;
+}
+
+.hamberger-menu::after {
+    top: 17px;
+    right: 0px;
+}
+
+/* Create square */
+.hamberger-menu::before, .hamberger-menu::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 2px;
+    height: 2px;
+    background-color: var(--primary_color);
+    border: 2px solid white;
+}
+
+.hamberger-menu .hamberger-menu-line {
+    display: block;
+    position: relative;
+    border-top: 2px solid white;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+    margin-bottom: 5px;
+}
+
+.main-detail-row .circle {
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    right: 90px;
+    background-color: var(--green);
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow:  0 0 10px 5px rgba(0,0,0,0.1);
+}
+
+.circle .text-layout {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
