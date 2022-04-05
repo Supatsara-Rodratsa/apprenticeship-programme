@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApprenticeshipScreenComponent } from './apprenticeship-screen/apprenticeship-screen.component';
 import { SharedModule } from './shared/shared.module';
+import { FirstSectionComponent } from './apprenticeship-screen/first-section/first-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ApprenticeshipScreenComponent
+    ApprenticeshipScreenComponent,
+    FirstSectionComponent
   ],
   imports: [
     BrowserModule,

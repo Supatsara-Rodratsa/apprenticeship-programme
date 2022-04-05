@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     background-color: var(--primary_color);
+    z-index: 999;
 }
 
 .main-app-bar .main-app-bar-row {

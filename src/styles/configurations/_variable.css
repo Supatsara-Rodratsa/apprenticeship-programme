@@ -1,8 +1,11 @@
 :root {
-    font-family: apercuPro;
-
+    font-family: apercuProMedium;
+    background-color: white;
     /* Color */
     --primary_color: #685DC5;
     --secondary_color: #3C237F;
     --green: #4FA16C;
+    --dark-gray: #000000;
+    --dark: #535353;
+    --border-_color: #DADADA;
 }
