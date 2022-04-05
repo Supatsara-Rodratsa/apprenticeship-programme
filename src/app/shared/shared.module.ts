@@ -2,9 +2,11 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { NavigationBarModule } from './components/navigation-bar/navigation-bar.module';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
+    ButtonComponent
   ],
   imports: [
     CommonModule,
@@ -12,7 +14,8 @@ import { NavigationBarModule } from './components/navigation-bar/navigation-bar.
   ],
   exports: [
     NavigationBarComponent,
-		NavigationBarModule
+		NavigationBarModule,
+		ButtonComponent
   ],
   entryComponents: [], 
   providers: [],
