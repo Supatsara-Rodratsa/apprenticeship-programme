@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../shared/service/api.service';
 
 @Component({
   selector: 'app-apprenticeship-screen',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApprenticeshipScreenComponent implements OnInit {
 
-  constructor() { }
+  programDetails: any;
+
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.apiService.getApiResponse().subscribe(res => {
+      this.programDetails = res;
+      console.log(this.programDetails);
+      
+    });
   }
 
 }
