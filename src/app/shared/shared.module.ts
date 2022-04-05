@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { NavigationBarModule } from './components/navigation-bar/navigation-bar.module';
 import { ButtonComponent } from './components/button/button.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ApiService } from './service/api.service';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,8 @@ import { ButtonComponent } from './components/button/button.component';
   ],
   imports: [
     CommonModule,
-		NavigationBarModule
+		NavigationBarModule,
+    HttpClientModule
   ],
   exports: [
     NavigationBarComponent,
@@ -18,7 +21,7 @@ import { ButtonComponent } from './components/button/button.component';
 		ButtonComponent
   ],
   entryComponents: [], 
-  providers: [],
+  providers: [HttpClient, ApiService],
 })
 export class SharedModule {
 	static forRoot(): any[] {
