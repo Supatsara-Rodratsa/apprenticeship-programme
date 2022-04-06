@@ -1,0 +1,48 @@
+.second-section .container {
+    margin: 10rem 0px;
+}
+
+.flex {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.image-layout {
+    background: url(src/assets/images/Pattern_circle.svg) no-repeat center;
+    background-size: 438px 438px;
+    width: 438px;
+    height: 438px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-display {
+    width: 380px;
+    height: 380px;
+    background: #E6E7ED;
+    background: url(src/assets/images/profile_1.png) no-repeat center;
+    background-size: 380px 380px;
+    border-radius: 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    background-color: #2196F3;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-row: 1 / span 2;
+  }
+
