@@ -4,4 +4,11 @@
 
 /* 2. import variable style */
 @import 
-    "configurations/_variable.css"
+    "configurations/_variable.css";
+
+@import 
+    "configurations/_screen.css";
+
+@import 
+    "global.css";
+

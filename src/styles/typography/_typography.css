@@ -17,6 +17,7 @@ src: url('../../assets/fonts/ApercuLight.otf') format("opentype");
     font-size: 22px;
     text-transform: uppercase;
     color: white;
+    letter-spacing: 1px;
 }
 
 .font-sub-app-bar {
@@ -103,6 +104,14 @@ src: url('../../assets/fonts/ApercuLight.otf') format("opentype");
     
     .elm-detail-2 {
         font-size: 20px !important;
+    }
+
+    ..sub-detail-light {
+        font-size: 16px;;
+    }
+
+    .sub-detail-light-2 {
+        font-size: 18px;;
     }
 }
 
