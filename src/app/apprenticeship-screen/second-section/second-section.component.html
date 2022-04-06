@@ -14,15 +14,74 @@
             </div>
         </div>
         <div class="grid-container">
-            <div class="item1">1</div>
-            <div class="item2">2</div>
-            <div class="item3">3</div>  
-            <div class="item4">4</div>
-            <div class="item5">5</div>
-          </div>
+            <div class="item1 stretch-layout border-layout common-layout dark-text-color">
+                <p class="sub-header-1">Scholarship value</p>
+                <p class="h1 font-light">€31,300</p>
+            </div>
+            <app-card class="stretch-layout mb-40" [details]="this.mockData[0]"></app-card>
+            <app-card class="stretch-layout mb-40" [details]="this.mockData[1]"></app-card>
+            <div class="border-layout item3">
+                <div class="line mr-ml-25"></div>
+            </div>
+            <div class="line item4"><span class="hide-line sub-header-1">GRADUATION</span></div>
+            <div class="item1-bottom stretch-layout border-layout common-layout dark-text-color">
+                <div class="grid mt-40">
+                    <div>
+                        <p class="sub-header-1">Tuition covered</p>
+                        <p class="sub-header-1 font-light dark-text-color">€20,900</p>
+                    </div>
+                    <div>
+                        <p class="sub-header-1">Remaining</p>
+                        <p class="sub-header-1 font-light dark-text-color">€2,000</p>
+                    </div>
+                    <div>
+                        <p class="sub-header-1">Living stipend</p>
+                        <p class="sub-header-1 font-light dark-text-color">€8,400 (€700/month)</p>
+                    </div>
+                </div>
+            </div>
+            <app-card class="item4 mt-40" [details]="this.mockData[2]"></app-card>
+        </div>
         
     </div>
-    <div id="smaller-screen" class="container">
-        dasd
+    <div id="smaller-screen" class="container container-column">
+        <div class="height-area">
+            <div class="layout">
+                <div class="image-layout">
+                    <div class="profile-display"></div>
+                </div>
+            </div>
+            <div class="layout adjust-layout">
+                <div class="background"></div>
+                <div class="detail-inside border-layout">
+                    <div class="h1 primary-text-color mt-header">About the <br>apprenticeship</div>
+                    <div>
+                        <p class="elm-detail-1 font-light mt-40 mb-40">Our scholarships are designed to give talented and driven young people from any background access to top-class education, experience and network. We offer a fully-funded master’s degree alongside an apprenticeship and a guaranteed job upon graduation. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="item">
+                <p class="sub-header-1">Fellowship value</p>
+                <p class="sub-header-1 font-light dark-text-color">€31,300</p>
+            </div>
+            <div>
+                <p class="sub-header-1">Tuition</p>
+                <p class="sub-header-1 font-light dark-text-color">€22,900</p>
+            </div>
+            <div>
+                <p class="sub-header-1">Remaining</p>
+                <p class="sub-header-1 font-light dark-text-color">€8,400</p>
+            </div>
+            <div>
+                <p class="sub-header-1">Living stipend</p>
+                <p class="sub-header-1 font-light dark-text-color">€8,400 (€700/month)</p>
+            </div>
+        </div>
+        <app-card class="stretch-layout" [details]="this.mockData[0]"></app-card>
+        <app-card class="stretch-layout" [details]="this.mockData[1]"></app-card>
+        <div class="line item4 mt-mb-10"><span class="hide-line sub-header-1">GRADUATION</span></div>
+        <app-card class="item4" [details]="this.mockData[2]"></app-card>
     </div>
 </div>

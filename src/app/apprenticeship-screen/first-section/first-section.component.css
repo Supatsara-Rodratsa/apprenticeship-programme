@@ -52,12 +52,6 @@
     right: 0;
 }
 
-.container-column .common-layout {
-    flex-direction: column;
-    padding: 25px 25px 0px 25px;
-    align-items: flex-start;
-}
-
 @media only screen and (max-width: 992px) {
     #logo {
         top: 80px;
@@ -66,10 +60,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .title {
-        margin-top: 50px;
-    }
-    
     #logo {
         transform: translateX(190px);
         top: 90px;

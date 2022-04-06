@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SubCardModel } from 'src/app/shared/model/model';
+import { cardMockData } from './mock.constant';
 
 @Component({
   selector: 'app-second-section',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondSectionComponent implements OnInit {
 
+  public mockData: SubCardModel[] = [];  
+  
   constructor() { }
 
   ngOnInit(): void {
+    this.mockData = cardMockData;
   }
 
 }
