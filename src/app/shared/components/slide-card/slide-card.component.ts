@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { SlidingCardModel } from '../../model/model';
 
 @Component({
   selector: 'app-slide-card',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slide-card.component.css']
 })
 export class SlideCardComponent implements OnInit {
+
+  @Input() item!: SlidingCardModel;
 
   constructor() { }
 
