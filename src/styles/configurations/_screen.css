@@ -1,0 +1,12 @@
+@media only screen and (min-width: 992px) {
+    #smaller-screen {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+    #bigger-screen {
+        display: none;
+    }
+}

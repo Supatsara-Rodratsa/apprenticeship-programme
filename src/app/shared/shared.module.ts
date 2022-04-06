@@ -5,10 +5,12 @@ import { NavigationBarModule } from './components/navigation-bar/navigation-bar.
 import { ButtonComponent } from './components/button/button.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ApiService } from './service/api.service';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
-    ButtonComponent
+    ButtonComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { ApiService } from './service/api.service';
   exports: [
     NavigationBarComponent,
 		NavigationBarModule,
-		ButtonComponent
+		ButtonComponent,
+    CardComponent
   ],
   entryComponents: [], 
   providers: [HttpClient, ApiService],

@@ -1,0 +1,16 @@
+.container {
+    padding: 25px;
+    background-color: white;
+}
+
+.common-layout {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.line {
+    width: 27px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
