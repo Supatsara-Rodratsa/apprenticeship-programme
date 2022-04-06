@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ApprenticeshipScreenComponent } from './apprenticeship-screen/apprenticeship-screen.component';
 import { SharedModule } from './shared/shared.module';
 import { FirstSectionComponent } from './apprenticeship-screen/first-section/first-section.component';
+import { SecondSectionComponent } from './apprenticeship-screen/second-section/second-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ApprenticeshipScreenComponent,
-    FirstSectionComponent
+    FirstSectionComponent,
+    SecondSectionComponent
   ],
   imports: [
     BrowserModule,
