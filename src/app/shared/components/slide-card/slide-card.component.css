@@ -1,0 +1,46 @@
+.container {
+    max-width: 800px;
+    position: absolute;
+}
+
+.flex-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.profile {
+    background: url(src/assets/images/profile_2.png) no-repeat center;
+    border-radius: 50%;
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.flex .container-column {
+    gap: 0;
+    justify-content: center;
+}
+
+.icon {
+    background: url(src/assets/images/linkedIn.svg) no-repeat center;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.bottom-section .container-column {
+    align-items: flex-start;
+    padding: 50px 120px;
+    gap: 24px;
+}
+
+@media only screen and (max-width: 500px) {
+    .bottom-section .container-column {
+        padding: 30px;
+    }
+}
