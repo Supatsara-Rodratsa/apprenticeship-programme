@@ -102,4 +102,20 @@
     #circle-section {
         display: none;
     }
+
+    .main-app-bar .main-app-bar-row .main-detail .margin-layout {
+        margin: 25px 0px 0px 5px;
+    }
+
+    .main-app-bar .main-app-bar-row {
+        padding: 0 20px;
+    }
+}
+
+.logo {
+    background: url(src/assets/images/harbourspace_logo_white-01.svg) no-repeat center;
+    width: 200px;
+    height: 71px;
+    background-size: 200px 100px;
+    cursor: pointer;
 }
