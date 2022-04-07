@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { FirstSectionComponent } from './apprenticeship-screen/first-section/first-section.component';
 import { SecondSectionComponent } from './apprenticeship-screen/second-section/second-section.component';
 import { SlidingSectionComponent } from './apprenticeship-screen/sliding-section/sliding-section.component';
+import { ToggleSectionComponent } from './apprenticeship-screen/toggle-section/toggle-section.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SlidingSectionComponent } from './apprenticeship-screen/sliding-section
     ApprenticeshipScreenComponent,
     FirstSectionComponent,
     SecondSectionComponent,
-    SlidingSectionComponent
+    SlidingSectionComponent,
+    ToggleSectionComponent
   ],
   imports: [
     BrowserModule,
