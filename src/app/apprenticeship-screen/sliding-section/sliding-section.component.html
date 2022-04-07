@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="background">
+        <div class="layout">
+
+        </div>
+    </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let item of mockData" class="slide">
+            <app-slide-card [item]="item"></app-slide-card>
+        </div>
+    </ngx-slick-carousel>
+    
+    
+</div>
+
