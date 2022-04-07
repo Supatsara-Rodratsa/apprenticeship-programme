@@ -1,0 +1,13 @@
+<div class="container border-layout" [ngClass]="showTopBorder ? showBottomBorder ? '' : 'hide-bottom-border ' : 'hide-top-border'">
+    <div class="grid">
+        <p class="elm-detail-1 primary-text-color topic" id="bigger-screen">Program conditions</p>
+        <p class="elm-detail-1 span-col stretch-layout">{{ item?.topic}}</p>
+        <div class="right-position icon" (click)="onClicked()" [ngClass]="!toggle ? 'open-icon' : 'close-icon'"></div>
+    </div>
+    <div class="grid mt-10" [@slideInOut]="animationState">
+        <p class="stretch-layout topic"></p>
+        <p class="elm-detail-1 font-light span-col stretch-layout">
+            {{ item?.details}}
+        </p>
+    </div>
+</div>

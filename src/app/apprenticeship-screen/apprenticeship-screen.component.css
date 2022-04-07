@@ -4,14 +4,25 @@
     width: 80%;
 }
 
+.containter {
+    margin: auto;
+    width: 80%;
+}
+
 @media only screen and (max-width: 500px) {
-    .containter {
+    .main-containter  {
         margin-top: 100px;
     }
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 992px) {
     .containter {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .main-containter  {
         width: 90%;
     }
 }

@@ -1,0 +1,16 @@
+<div class="container-column hide-gap">
+    <div class="adjust-flex">
+        <div class="h1 primary-text-color">Frequently asked <br> questions</div>
+        <div class="flex">
+            <div class="sub-header-1 font-light dark-text-color ">Filter by:</div>
+            <ng-select class="dropdown primary-text-color " [items]="['aa', 'bb', 'cc']"
+                   bindLabel="name"
+                   placeholder="Program conditions">
+                   <ng-option *ngFor="let item of ['aa', 'bb', 'cc']" [value]="'aa'">{{item}}</ng-option>
+            </ng-select>
+        </div>
+    </div>
+    <div class="container-column hide-gap" *ngFor="let item of mockData; let i = index">
+        <app-toggle [item]="item" [lengthItem]="mockData?.length || 0" [currentIndex]="i"></app-toggle>
+    </div>
+</div>

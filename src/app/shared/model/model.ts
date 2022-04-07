@@ -12,3 +12,8 @@ export interface SlidingCardModel {
     subDetail1?: string,
     subDetail2?: string
 }
+
+export interface ToggleModel {
+    topic?: string,
+    details?: string,
+}

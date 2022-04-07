@@ -1,0 +1,26 @@
+.adjust-flex {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.dropdown {
+    margin-top: -15px;
+    border-radius: 50px;
+    border: 1px solid var(--border_color);
+    padding: 15px 30px;
+    margin-left: 20px;
+}
+
+.hide-gap {
+    gap: 0px;
+}
+
+@media only screen and (max-width: 992px) {
+    .adjust-flex {
+        display: grid;
+        gap: 50px;
+        /* margin-bottom: 50px; */
+    }
+ }
