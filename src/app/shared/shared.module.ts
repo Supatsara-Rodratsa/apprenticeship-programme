@@ -7,12 +7,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ApiService } from './service/api.service';
 import { CardComponent } from './components/card/card.component';
 import { SlideCardComponent } from './components/slide-card/slide-card.component';
+import { ToggleComponent } from './components/toggle/toggle.component';
 
 @NgModule({
   declarations: [
     ButtonComponent,
     CardComponent,
-    SlideCardComponent
+    SlideCardComponent,
+    ToggleComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { SlideCardComponent } from './components/slide-card/slide-card.component
 		NavigationBarModule,
 		ButtonComponent,
     CardComponent,
-    SlideCardComponent
+    SlideCardComponent, 
+    ToggleComponent
   ],
   entryComponents: [], 
   providers: [HttpClient, ApiService],
