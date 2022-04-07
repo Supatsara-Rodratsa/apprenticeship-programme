@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SubCardModel } from 'src/app/shared/model/model';
-import { cardMockData } from './mock.constant';
+import { cardMockData } from '../mock.constant';
 
 @Component({
   selector: 'app-second-section',

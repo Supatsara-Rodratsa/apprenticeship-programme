@@ -1,0 +1,96 @@
+.background {
+    background: url(src/assets/images/pattern_long.svg) no-repeat center;
+    width: calc(100% - 200px);
+    height: 394px;
+    margin-bottom: -100px;
+    max-width: 1120px;
+    border: 1px solid #E6E6E6;
+}
+
+.layout {
+    position: absolute;
+}
+
+.slick-initialized .slick-slide { 
+    width: 800px!important;
+}
+
+.slick-slide {
+    text-align:center;
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.slick-slide.slick-active:first-child, .slick-slide.slick-active:last-child{ 
+  margin: 0;
+}
+
+.carousel {
+    transform: translateY(-156px);
+}
+
+::ng-deep .custom-button {
+    position: absolute;
+    background-size: 48px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    z-index: 10;
+    background-color: white !important;
+    border-radius: 50%;
+}
+
+::ng-deep .prev {
+    bottom: 150px;
+    background: url(src/assets/images/button_left.svg) no-repeat center !important;
+    margin-left: 40px;
+}
+
+::ng-deep .next {
+    right: 0;
+    bottom: 150px;
+    background: url(src/assets/images/button-right.svg) no-repeat center !important;
+    margin-right: 40px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .slick-initialized .slick-slide { 
+        width: 500px!important;
+    }
+
+    .background {
+        width: 500px;
+        height: 300px;
+        margin-bottom: -150px;
+        border: 1px solid #E6E6E6;
+    }
+
+    .carousel {
+        transform: translateY(0);
+    }
+
+    ::ng-deep .prev {
+        bottom: -70px;
+        right: 80px;
+    }
+    
+    ::ng-deep .next {
+        right: 20px;
+        bottom: -70px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .background {
+        width: 300px;
+        height: 300px;
+        margin-bottom: -190px;
+    }
+
+    .slick-initialized .slick-slide { 
+        width: 350px!important;
+    }
+ }
+

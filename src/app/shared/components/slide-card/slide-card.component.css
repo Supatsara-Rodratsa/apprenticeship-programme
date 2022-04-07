@@ -1,6 +1,6 @@
-.container {
+.container-card {
     max-width: 800px;
-    position: absolute;
+    text-align: start;
 }
 
 .flex-layout {
@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+    background-color: white;
 }
 
 .profile {
