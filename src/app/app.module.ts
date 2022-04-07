@@ -9,6 +9,7 @@ import { FirstSectionComponent } from './apprenticeship-screen/first-section/fir
 import { SecondSectionComponent } from './apprenticeship-screen/second-section/second-section.component';
 import { SlidingSectionComponent } from './apprenticeship-screen/sliding-section/sliding-section.component';
 import { ToggleSectionComponent } from './apprenticeship-screen/toggle-section/toggle-section.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ToggleSectionComponent } from './apprenticeship-screen/toggle-section/t
     BrowserModule,
     AppRoutingModule,
     SharedModule.forRoot(),
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
