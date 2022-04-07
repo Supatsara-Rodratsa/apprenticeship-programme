@@ -9,12 +9,14 @@ import { CardComponent } from './components/card/card.component';
 import { SlideCardComponent } from './components/slide-card/slide-card.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { ToggleModule } from './components/toggle/toggle.module';
+import { BottomStickyBarComponent } from './components/bottom-sticky-bar/bottom-sticky-bar.component';
 
 @NgModule({
   declarations: [
     ButtonComponent,
     CardComponent,
     SlideCardComponent,
+    BottomStickyBarComponent,
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { ToggleModule } from './components/toggle/toggle.module';
 		ButtonComponent,
     CardComponent,
     SlideCardComponent, 
-    ToggleModule
+    ToggleModule,
+    BottomStickyBarComponent
   ],
   entryComponents: [], 
   providers: [HttpClient, ApiService],
