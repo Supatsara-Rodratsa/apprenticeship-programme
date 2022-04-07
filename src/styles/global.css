@@ -48,7 +48,7 @@ p:not(.main-detail p) {
 
 .line {
     text-align: center; 
-    border-bottom: 1px solid var(--borde_color); 
+    border-bottom: 1px solid var(--border_color); 
     line-height: 0.1em;
 } 
 
