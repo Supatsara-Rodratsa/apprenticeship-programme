@@ -1,0 +1,14 @@
+.container {
+    padding: 15px 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 5px;
+}
