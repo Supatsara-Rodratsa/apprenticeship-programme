@@ -1,6 +1,5 @@
-.container {
+.container-card {
     max-width: 800px;
-    position: absolute;
 }
 
 .flex-layout {
