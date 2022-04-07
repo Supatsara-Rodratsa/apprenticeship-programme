@@ -4,7 +4,7 @@
     height: 394px;
     margin-bottom: -100px;
     max-width: 1120px;
-    border: 1px solid #E6E6E6;
+    border: 1px solid var(--light_color);
 }
 
 .layout {
@@ -42,14 +42,14 @@
 
 ::ng-deep .prev {
     bottom: 150px;
-    background: url(src/assets/images/button_left.svg) no-repeat center !important;
+    background: url(src/assets/images/button_left.svg) no-repeat center;
     margin-left: 40px;
 }
 
 ::ng-deep .next {
     right: 0;
     bottom: 150px;
-    background: url(src/assets/images/button-right.svg) no-repeat center !important;
+    background: url(src/assets/images/button-right.svg) no-repeat center;
     margin-right: 40px;
 }
 
@@ -63,7 +63,7 @@
         width: 500px;
         height: 300px;
         margin-bottom: -150px;
-        border: 1px solid #E6E6E6;
+        border: 1px solid var(--light_color);
     }
 
     .carousel {

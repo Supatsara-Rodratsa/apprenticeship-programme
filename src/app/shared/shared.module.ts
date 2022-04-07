@@ -8,18 +8,19 @@ import { ApiService } from './service/api.service';
 import { CardComponent } from './components/card/card.component';
 import { SlideCardComponent } from './components/slide-card/slide-card.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
+import { ToggleModule } from './components/toggle/toggle.module';
 
 @NgModule({
   declarations: [
     ButtonComponent,
     CardComponent,
     SlideCardComponent,
-    ToggleComponent
   ],
   imports: [
     CommonModule,
 		NavigationBarModule,
-    HttpClientModule
+    HttpClientModule,
+    ToggleModule
   ],
   exports: [
     NavigationBarComponent,
@@ -27,7 +28,7 @@ import { ToggleComponent } from './components/toggle/toggle.component';
 		ButtonComponent,
     CardComponent,
     SlideCardComponent, 
-    ToggleComponent
+    ToggleModule
   ],
   entryComponents: [], 
   providers: [HttpClient, ApiService],

@@ -10,6 +10,7 @@ import { SecondSectionComponent } from './apprenticeship-screen/second-section/s
 import { SlidingSectionComponent } from './apprenticeship-screen/sliding-section/sliding-section.component';
 import { ToggleSectionComponent } from './apprenticeship-screen/toggle-section/toggle-section.component';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
     AppRoutingModule,
     SharedModule.forRoot(),
     SlickCarouselModule,
-    NgSelectModule
+    NgSelectModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
