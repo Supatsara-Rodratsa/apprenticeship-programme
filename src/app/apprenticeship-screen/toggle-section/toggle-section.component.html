@@ -3,11 +3,11 @@
         <div class="h1 primary-text-color">Frequently asked <br> questions</div>
         <div class="flex">
             <div class="sub-header-1 font-light dark-text-color ">Filter by:</div>
-            <ng-select class="dropdown primary-text-color " [items]="['aa', 'bb', 'cc']"
-                   bindLabel="name"
-                   placeholder="Program conditions">
-                   <ng-option *ngFor="let item of ['aa', 'bb', 'cc']" [value]="'aa'">{{item}}</ng-option>
-            </ng-select>
+            <ng-select class="dropdown primary-text-color" [searchable]="false" [clearable]="false" placeholder="Program conditions" (click)="openDropdown()">
+                <ng-option *ngFor="let list of dropDownList" [value]="list.id">{{list.name}}</ng-option>
+             </ng-select>
+             <span *ngIf="!toggle" class="icon-down icon"></span>
+             <span *ngIf="toggle" class="icon-up icon"></span>
         </div>
     </div>
     <div class="container-column hide-gap" *ngFor="let item of mockData; let i = index">

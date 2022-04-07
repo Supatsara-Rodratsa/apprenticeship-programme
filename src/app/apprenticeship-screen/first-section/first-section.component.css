@@ -56,12 +56,13 @@
     #logo {
         top: 80px;
         background-size: 200px 200px;
+        transform: translateX(152px);
     }
 }
 
 @media only screen and (max-width: 500px) {
     #logo {
-        transform: translateX(190px);
+        transform: translateX(180px);
         top: 90px;
         background-size: 134px 134px;
         width: 134px;

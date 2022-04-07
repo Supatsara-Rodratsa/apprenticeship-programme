@@ -10,11 +10,25 @@ import { toggleMockData } from '../mock.constant';
 export class ToggleSectionComponent implements OnInit {
 
   mockData: ToggleModel[] = [];
+  placeholder: string = 'Program conditions';
+  dropDownList = [
+    { id: 1, name: 'All' },
+    { id: 2, name: 'Admission' },
+    { id: 3, name: 'Harbour.Space' },
+    { id: 4, name: 'SCG' },
+    { id: 5, name: 'Living in Bangkok' },
+  ];
+
+  toggle: boolean = false
 
   constructor() { }
 
   ngOnInit(): void {
     this.mockData = toggleMockData;
+  }
+
+  openDropdown() {
+    this.toggle = !this.toggle
   }
 
 }
